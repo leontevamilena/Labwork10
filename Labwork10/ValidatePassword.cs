@@ -1,4 +1,6 @@
-﻿namespace Labwork10
+﻿using System.Text.RegularExpressions;
+
+namespace Labwork10
 {
     public static class PasswordValidator
     {
@@ -10,7 +12,9 @@
             }
 
             bool hasDigit = false;
-            bool hasLetter = false;
+            bool hasLower = false;
+            bool hasUpper = false;
+            bool hasSpecialChar = false;
 
             foreach (char c in password)
             {
@@ -18,12 +22,20 @@
                 {
                     hasDigit = true;
                 }
-                else if (char.IsLetter(c))
+                else if (char.IsLower(c))
                 {
-                    hasLetter = true;
+                    hasLower = true;
+                }
+                else if (char.IsUpper(c))
+                {
+                    hasUpper = true;
+                }
+                else if (!char.IsLetterOrDigit(c))
+                {
+                    hasSpecialChar = true;
                 }
 
-                if (hasDigit && hasLetter)
+                if (hasDigit && hasLower && hasUpper && hasSpecialChar)
                 {
                     return true;
                 }
