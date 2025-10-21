@@ -3,6 +3,8 @@ name: .NET Regression Tests
 on:		# Запускается при push и pull request в ветку master
   push:
     branches: [ "master" ]
+    paths-ignore:
+      - '**/README.md'
   pull_request:
     branches: [ "master" ]
 
