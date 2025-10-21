@@ -5,13 +5,6 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labwork10", "Labwork10\Labwork10.csproj", "{97441F19-31E9-454C-B21F-27803BF97CB8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5250A6D8-2D91-4C98-B829-D23906DBD79F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{293D9001-9510-4642-B6E8-035CC97615EA}"
-	ProjectSection(SolutionItems) = preProject
-		autotests.yml = autotests.yml
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordValidatorTests", "PasswordValidatorTests\PasswordValidatorTests.csproj", "{6A5584D4-23FB-4095-9056-A928DCC4927C}"
 EndProject
 Global
@@ -31,9 +24,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{293D9001-9510-4642-B6E8-035CC97615EA} = {5250A6D8-2D91-4C98-B829-D23906DBD79F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C95F65A-68A5-46D8-8298-774A8540DBD2}
